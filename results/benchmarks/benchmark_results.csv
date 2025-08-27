@@ -1,0 +1,25 @@
+cover,size,method,payload_bytes,percent_capacity,psnr_db,encode_ms,decode_ms,crc_ok
+cover_gradient_512.png,"(512, 512)",sequential,9827,10.0,inf,56.11,34.05,True
+cover_gradient_512.png,"(512, 512)",random,9827,10.0,inf,218.37,175.06,True
+cover_gradient_512.png,"(512, 512)",sequential,29482,30.0,inf,58.78,19.48,True
+cover_gradient_512.png,"(512, 512)",random,29482,30.0,inf,260.57,186.58,True
+cover_gradient_512.png,"(512, 512)",sequential,49138,50.0,inf,47.88,13.2,True
+cover_gradient_512.png,"(512, 512)",random,49138,50.0,inf,235.15,185.13,True
+cover_gradient_512.png,"(512, 512)",sequential,78620,80.0,inf,55.96,13.06,True
+cover_gradient_512.png,"(512, 512)",random,78620,80.0,inf,270.1,175.68,True
+cover_checker_512.png,"(512, 512)",sequential,9827,10.0,inf,39.86,10.68,True
+cover_checker_512.png,"(512, 512)",random,9827,10.0,inf,241.09,176.5,True
+cover_checker_512.png,"(512, 512)",sequential,29482,30.0,inf,48.79,10.58,True
+cover_checker_512.png,"(512, 512)",random,29482,30.0,inf,258.2,305.97,True
+cover_checker_512.png,"(512, 512)",sequential,49138,50.0,inf,72.04,16.55,True
+cover_checker_512.png,"(512, 512)",random,49138,50.0,inf,267.7,161.06,True
+cover_checker_512.png,"(512, 512)",sequential,78620,80.0,inf,70.89,14.05,True
+cover_checker_512.png,"(512, 512)",random,78620,80.0,inf,302.05,183.36,True
+cover_noise_1024x768.png,"(1024, 768)",sequential,29488,10.0,inf,176.39,48.7,True
+cover_noise_1024x768.png,"(1024, 768)",random,29488,10.0,inf,407.07,263.1,True
+cover_noise_1024x768.png,"(1024, 768)",sequential,88465,30.0,inf,163.33,27.99,True
+cover_noise_1024x768.png,"(1024, 768)",random,88465,30.0,inf,375.24,296.0,True
+cover_noise_1024x768.png,"(1024, 768)",sequential,147442,50.0,inf,205.5,23.66,True
+cover_noise_1024x768.png,"(1024, 768)",random,147442,50.0,inf,474.18,252.33,True
+cover_noise_1024x768.png,"(1024, 768)",sequential,235907,80.0,inf,165.92,37.5,True
+cover_noise_1024x768.png,"(1024, 768)",random,235907,80.0,inf,489.93,263.67,True
