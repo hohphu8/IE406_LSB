@@ -125,3 +125,80 @@ Random + key giúp dữ liệu “ẩn sâu hơn” trong nhiễu.
   * Tiền xử lý payload bằng mã hóa (AES, ChaCha20).
   * Nhúng chọn lọc vào vùng nhiều texture để giảm nguy cơ phát hiện.
   * Mở rộng sang video/audio.
+
+
+# Chia slide thuyết trình
+
+## **Phần 1 – Giới thiệu**
+
+* **Slide 1:** Giới thiệu nhóm (tên, MSSV, phân công).
+* **Slide 2:** Đề tài: *“Cải tiến kỹ thuật LSB với lựa chọn Pixel ngẫu nhiên và khóa bí mật”*.
+
+  * Nói ngắn gọn về mục tiêu và ý nghĩa.
+
+---
+
+## **Phần 2 – Cơ sở lý thuyết**
+
+* **Slide 3:** *Kỹ thuật LSB cơ bản – Nền tảng*
+
+  * Giải thích LSB là gì.
+  * Ví dụ thay bit LSB trong pixel.
+  * Công thức PSNR.
+* **Slide 4:** *Điểm yếu của LSB tuần tự – Dễ bị phát hiện*
+
+  * Minh họa LSB-plane.
+  * Nêu một số phương pháp tấn công (RS, histogram…).
+
+---
+
+## **Phần 3 – Giải pháp cải tiến**
+
+* **Slide 5:** *Cải tiến: Random pixel + Khóa bí mật*
+
+  * Ý tưởng: phân tán bit nhúng, dựa trên passphrase.
+  * Header 28 byte, PRNG (PCG64).
+  * Lợi ích: tăng tính ẩn, khó phát hiện.
+
+---
+
+## **Phần 4 – Demo + Kết quả + Kết luận (Hồ Hoàng Phú)**
+
+* **Slide 6:** *Demo – Giao diện ứng dụng Encode/Decode*
+
+  * Encode: chọn ảnh cover + payload + passphrase → stego.
+  * Decode: nhập passphrase → trích xuất.
+  * Nếu sai pass → CRC FAIL.
+
+* **Slide 7:** *Kết quả Benchmark – PSNR*
+
+  * Biểu đồ PSNR vs % capacity.
+  * Nhận xét: random ≈ sequential về chất lượng.
+
+* **Slide 8:** *Kết quả Benchmark – Thời gian*
+
+  * Encode random chậm hơn 2–5 ms.
+  * Không ảnh hưởng thực tế.
+
+* **Slide 9:** *Kết quả Benchmark – LSB-plane*
+
+  * Sequential: pattern rõ.
+  * Random: nhiễu phân tán, khó phát hiện.
+
+* **Slide 10:** *Hướng phát triển*
+
+  * Giấu chọn lọc vào vùng texture cao.
+  * Kết hợp mã hóa AES/ChaCha20.
+  * Mở rộng sang video/audio.
+
+* **Slide 11 (kết thúc):** *Tóm tắt & Cảm ơn*
+
+  * Kỹ thuật cải tiến đạt mục tiêu: **tăng tính ẩn giấu mà không ảnh hưởng chất lượng**.
+  * Cảm ơn thầy và các bạn đã lắng nghe.
+
+---
+
+* **Một người:** 1–2
+* **Một người:** 3–4
+* **Một người:** 5
+* **Phú:** Còn lại
